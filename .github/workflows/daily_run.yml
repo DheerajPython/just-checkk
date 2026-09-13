@@ -3,7 +3,7 @@ name: Daily Execution Workflow
 on:
   schedule:
     # Runs everyday at 4:10 PM IST (10:40 AM UTC)
-    - cron: '55 10 * * *'
+    - cron: '10 11 * * *'
   # Allows manual triggering from main branch anytime
   workflow_dispatch:
 
@@ -15,7 +15,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
         with:
-          ref: main
+          ref: dheeraj-0.1
 
       - name: Set up Python
         uses: actions/setup-python@v5
