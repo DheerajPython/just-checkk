@@ -2,8 +2,8 @@ name: Daily Execution Workflow
 
 on:
   schedule:
-    # Runs everyday at 3:50 PM IST (10:20 AM UTC)
-    - cron: '20 10 * * *'
+    # Runs everyday at 4:10 PM IST (10:40 AM UTC)
+    - cron: '40 10 * * *'
   # Allows manual triggering from main branch anytime
   workflow_dispatch:
 
