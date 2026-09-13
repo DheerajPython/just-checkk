@@ -2,9 +2,9 @@ name: Daily Execution Workflow
 
 on:
   schedule:
-    # Runs everyday at 3:25 PM IST (09:55 AM UTC)
-    - cron: '55 9 * * *'
-  # Allows manual triggering from the Actions tab anytime
+    # Runs everyday at 3:26 PM IST (09:56 AM UTC)
+    - cron: '56 9 * * *'
+  # Allows manual triggering from main branch anytime
   workflow_dispatch:
 
 jobs:
@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v5
